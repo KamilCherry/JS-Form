@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("./OpenSans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./OpenSans/static/OpenSans/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./OpenSans/static/OpenSans/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+    background-image: url("./../img/tactile_noise.webp");
+    padding: 0;
+    margin: 0;
+    /* position: relative; */
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-weight: 700;
+}
+
+.title {
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    min-height: 420px;
+    background-color: #434343;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    box-shadow: #acacac 0 0 40px -3px;
+}
+
+#email, #passwd {
+    width: 100%;
+    margin: 20px 0;
+    height: 65px;
+    font-size: 23px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #c4fec4;
+    outline: none;
+    color: #232323;
+    border: 3px solid #318b51;
+    border-radius: 10px;
+}
+
+#email:hover, #passwd:hover {
+    cursor: pointer;
+    background-color: #d4eed4;
+}
+
+#email:focus, #passwd:focus {
+    background-color: #94fe94;
+    border: 3px solid #718b71;
+    color: #237323;
+    cursor: text;
+}
+
+#email::placeholder, #passwd::placeholder {
+    text-align: center;
+    color: #909090;
+}
+
+#email:focus::placeholder, #passwd:focus::placeholder {
+    color: #5aba5a;
+}
+
+#submit {
+    width: 100%;
+    box-sizing: border-box;
+    height: 65px;
+    padding: 5px;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 30px;
+    outline: none;
+    background-color: #4aba4a;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #2ab02a;
+    color: #deffde;
+    border: 3px solid #deffde;
+}
+
+#submit:focus {
+    background-color: #0a800a;
+    color: #ace0ac;
+    border: 3px solid #ace0ac;
+}
