@@ -119,13 +119,17 @@ input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder
     border: 3px solid #ace0ac;
 }
 
+.redBorder::before {
+    content: '*';
+}
+
 .redBorder {
     border: 3px solid #ff4040 !important;
 }
 
 .errorInfo {
-    display: block;
-    position: fixed;
+    display: none;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 15px 0;
