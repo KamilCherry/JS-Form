@@ -12,16 +12,20 @@
     <main>
 
     <section> <!-- Title section -->
-        <h2 class="title">Validate</h2>
+        <h2 class="title">Validation Registration</h2>
     </section>
 
     <section> <!-- Info fields section -->
+        <input type="text" placeholder="Name & surname">
+        <input type="date" required pattern="\d{4}-\d{2}-\d{2}" id="dateOfBirth">
         <input type="email" id="email" placeholder="E-mail">
         <input type="password" id="passwd" placeholder="Password">
+        <input type="password" id="passwdAgain" placeholder="Password again">
+        <input type="text" id="description" placeholder="Description" maxlength="20">
     </section>
 
     <section> <!-- Submit button section -->
-        <input type="button" value="Submit" id="submit">
+        <input type="button" value="Register" id="submit">
     </section>
 
     </main>

@@ -45,14 +45,14 @@ h1, h2, h3, h4, h5, h6, .title {
     background-color: #434343;
     text-align: center;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 50px 30px;
     box-shadow: #acacac 0 0 40px -3px;
 }
 
-#email, #passwd {
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
     width: 100%;
     margin: 20px 0;
-    height: 65px;
+    height: 52px;
     font-size: 23px;
     padding: 5px 5px;
     box-sizing: border-box;
@@ -64,24 +64,24 @@ h1, h2, h3, h4, h5, h6, .title {
     border-radius: 10px;
 }
 
-#email:hover, #passwd:hover {
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="date"]:hover {
     cursor: pointer;
     background-color: #d4eed4;
 }
 
-#email:focus, #passwd:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus {
     background-color: #94fe94;
     border: 3px solid #718b71;
     color: #237323;
     cursor: text;
 }
 
-#email::placeholder, #passwd::placeholder {
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder, input[type="date"]::placeholder {
     text-align: center;
     color: #909090;
 }
 
-#email:focus::placeholder, #passwd:focus::placeholder {
+input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder, input[type="email"]:focus::placeholder, input[type="date"]:focus::placeholder {
     color: #5aba5a;
 }
 
