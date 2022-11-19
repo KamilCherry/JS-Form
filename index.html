@@ -28,7 +28,8 @@
 
     <section> <!-- Info fields section -->
         <input type="text" placeholder="Name & surname">
-        <input type="date" required pattern="\d{4}-\d{2}-\d{2}" id="dateOfBirth">
+        Date of birth
+        <input type="date" required pattern="\d{4}-\d{2}-\d{2}" id="dateOfBirth" min="1900-01-01" max="2009-01-01">
         <input type="email" id="email" placeholder="E-mail">
         <input type="password" id="passwd" placeholder="Password">
         <input type="password" id="passwdAgain" placeholder="Password again">
