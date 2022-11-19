@@ -19,7 +19,7 @@ body {
     background-image: url("./../img/tactile_noise.webp");
     padding: 0;
     margin: 0;
-    /* position: relative; */
+    position: relative;
     color: #ffffff;
     font-size: 30px;
     font-family: "Open Sans";
@@ -45,8 +45,14 @@ h1, h2, h3, h4, h5, h6, .title {
     background-color: #434343;
     text-align: center;
     box-sizing: border-box;
-    padding: 50px 30px;
+    padding: 0 50px 35px 50px;
     box-shadow: #acacac 0 0 40px -3px;
+}
+
+@media screen and (max-height: 1080px) {
+    .box {
+        transform: translate(-50%, -50%) scale(90%);
+    }
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
@@ -111,4 +117,26 @@ input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder
     background-color: #0a800a;
     color: #ace0ac;
     border: 3px solid #ace0ac;
+}
+
+.redBorder {
+    border: 3px solid #ff4040 !important;
+}
+
+.errorInfo {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #ff4040;
+    font-size: 17px;
+    z-index: 200;
+    text-align: center;
+}
+
+.errorInfo > div {
+    display: inline-block;
+    text-align: left;
 }
